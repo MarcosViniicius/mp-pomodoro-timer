@@ -14,15 +14,46 @@
       <section class="container">
         <section class="container-timer">
           <div>
-            <button class="modality active-button" type="button">Pomodoro</button>
-            <button class="modality" type="button">Intervalo Curto</button>
-            <button class="modality" type="button">Intervalo Longo</button>
+            <button
+              class="modality"
+              type="button"
+              value="25"
+              id="25"
+              onclick="pegarValor(this.value)"
+            >
+              Pomodoro
+            </button>
+            <button
+              class="modality"
+              type="button"
+              value="5"
+              id="5"
+              onclick="pegarValor(this.value)"
+            >
+              Intervalo Curto
+            </button>
+            <button
+              class="modality"
+              type="button"
+              value="15"
+              id="15"
+              onclick="pegarValor(this.value)"
+            >
+              Intervalo Longo
+            </button>
           </div>
           <div>
             <p id="counter">25:00</p>
           </div>
           <div>
-            <button id="start" class="start" type="button">Começar</button>
+            <button
+              id="start"
+              class="start"
+              type="button"
+              onclick="iniciarPomodoro()"
+            >
+              Começar
+            </button>
           </div>
         </section>
         <div class="divider"></div>
